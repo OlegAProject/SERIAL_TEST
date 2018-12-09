@@ -1,5 +1,5 @@
 delete(instrfind);
-dat = serial('COM8', 'BaudRate', 115200);
+dat = serial('COM7', 'BaudRate', 115200);
 dat.InputBufferSize = 4096;
 
 fopen(dat)
