@@ -6,9 +6,11 @@ fopen(dat)
 set(dat, 'ByteOrder', 'littleEndian')
 
 disp 'Ok!';
-
-fwrite(dat, 1, 'uint8');
-
-number = fread(dat, 1, 'uint16')
-
+while 1
+  fwrite(dat, 1, 'uint8')
+  number = fread(dat, 1, 'uint16')
+  pause(0.3);
+  clc;
+end
 fclose(dat);
+
